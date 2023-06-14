@@ -1,8 +1,8 @@
 {
   "name": "Dmytro Zeleniuk",
   "short_name": "zdm.official",
-  "theme_color": "#000522",
-  "background_color": "#000522",
+  "theme_color": "#00050c",
+  "background_color": "#00050c",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",

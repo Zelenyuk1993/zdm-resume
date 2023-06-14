@@ -9,8 +9,8 @@ import {Meta, Title} from "@angular/platform-browser";
 })
 export class MainComponent {
   @ViewChild('video') public video!: ElementRef;
-  public themeVideoUrl: string = 'assets/video-bg/bg-video-7.mp4';
-  public themeImageUrl: string = 'assets/image-bg/bg-image-7.jpeg';
+  public themeVideoUrl: string = 'assets/video-bg/bg-video-1.mp4';
+  public themeImageUrl: string = 'assets/image-bg/bg-image-1.jpeg';
 
   constructor(private meta: Meta, private title: Title) {
     this.meta.addTags([
