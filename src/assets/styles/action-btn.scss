@@ -1,0 +1,105 @@
+.floatingButtonWrap {
+  display: block;
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  //bottom: -15px;
+  //right: -15px;
+  z-index: 999999999;
+}
+
+.floatingButtonInner {
+  position: relative;
+}
+
+.floatingButton {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9 9 121 / 20%) 35%, #4b8bc229 100%);
+  color: #fff;
+  line-height: 50px;
+  position: absolute;
+  border-radius: 50% 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #ffffff;
+  /* opacity: 0.3; */
+  box-shadow: -6px -5px 7px #000000e0;
+  opacity: 1;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background: linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(9,9,121,1) 35%,#4b8bc2 100%);
+  }
+}
+
+.floatingButton .fa {
+  font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+  opacity: 1;
+  color: #fff;
+}
+
+
+.floatingButton .fa {
+  transform: rotate(0deg);
+  transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+  transform: rotate(270deg);
+}
+
+.floatingMenu {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  /* width: 200px; */
+  display: none;
+
+}
+
+.floatingMenu li {
+  width: 100%;
+  float: right;
+  list-style: none;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.floatingMenu li a {
+  padding: 2px 15px;
+  display: inline-block;
+  border: solid 1px white;
+  font-size: 16px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.4s;
+  cursor: pointer;
+  box-shadow: -1px 3px 5px #000;
+  &:hover{
+    background: linear-gradient(90deg,rgba(2,0,36,1) 0%,rgba(9,9,121,1) 35%,#4b8bc2 100%);
+    margin-right: 10px;
+    text-decoration: none;
+  }
+}
+
+
+.icon-default{
+  font-size: 16px;
+}
+
+
+//@media (max-width: 592px) {
+//}

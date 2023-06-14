@@ -1,0 +1,35 @@
+<section class="app-main">
+  <img alt="logo" src="assets/images/bee-logo/Logo-light.png" class="app-main__logo">
+  <div class="video-wrapper">
+    <video #video playsinline autoplay muted loop>
+      <source [src]="themeVideoUrl" type="video/mp4">
+      <track [src]="themeImageUrl" kind="captions" srclang="en" label="english_captions">
+    </video>
+  </div>
+  <div class="app-main__user-img"></div>
+  <div class="app-main__title">
+    <h1>Dmytro Zeleniuk</h1>
+    <h2>Senior Software Engineer</h2>
+    <h2>Adventurer</h2>
+    <h2>Athlete</h2>
+  </div>
+  <div class="app-main__social-box">
+    <a target="_blank" href="assets/files/dmytro-zeleniuk-cv.pdf"  aria-label="cv"><i class="social-icon fa-solid fa-file-pdf"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/in/dmytro-zeleniuk/"  aria-label="linkedin"><i class="social-icon fab fa-brands fa-linkedin"></i></a>
+    <a target="_blank" href="https://www.instagram.com/zdm.official/"  aria-label="instagram"><i class="social-icon fab fa-brands fa-instagram"></i></a>
+    <a target="_blank" href="https://www.facebook.com/dima.zelenyuk/"  aria-label="facebook"><i class="social-icon fa-brands fa-facebook"></i></a>
+    <a target="_blank" href="https://www.tiktok.com/@the_tiktoker_ua"  aria-label="tiktok"><i class="social-icon fa-brands fa-tiktok"></i></a>
+    <a href="https://twitter.com/dima18226336"  aria-label="twitter"><i class="social-icon fab fa-brands fa-twitter"></i></a>
+    <a href="mailto: dimaszelenyuk@gmail.com" aria-label="mailto"><i class="social-icon fas fa-envelope"></i></a>
+    <div class="floatingButtonWrap">
+      <div class="floatingButtonInner">
+        <a aria-label="action" class="floatingButton">
+          <i class="fa-sharp fa-solid fa-paint-roller icon-default"></i>
+        </a>
+        <ul class="floatingMenu">
+          <li *ngFor="let number of [1,2,3,4,5,6,7]"><a (click)="changeTheme(number)">Theme {{number}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
