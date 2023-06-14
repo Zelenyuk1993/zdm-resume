@@ -23,9 +23,9 @@
     <a href="mailto: dimaszelenyuk@gmail.com" aria-label="mailto"><i class="social-icon fas fa-envelope"></i></a>
     <div class="floatingButtonWrap">
       <div class="floatingButtonInner">
-        <a aria-label="action" class="floatingButton">
+        <button class="floatingButton">
           <i class="fa-sharp fa-solid fa-paint-roller icon-default"></i>
-        </a>
+        </button>
         <ul class="floatingMenu">
           <li *ngFor="let number of [1,2,3,4,5,6,7]"><a (click)="changeTheme(number)">Theme {{number}}</a></li>
         </ul>
