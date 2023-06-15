@@ -1,4 +1,12 @@
-import {ChangeDetectionStrategy, Component, ElementRef, ViewChild} from '@angular/core';
+import {
+  AfterContentInit,
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  OnInit,
+  ViewChild
+} from '@angular/core';
 import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
@@ -7,12 +15,17 @@ import {Meta, Title} from "@angular/platform-browser";
   styleUrls: ['./main.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainComponent {
+export class MainComponent implements AfterViewInit{
   @ViewChild('video') public video!: ElementRef;
-  public themeVideoUrl: string = 'assets/video-bg/bg-video-1.mp4';
-  public themeImageUrl: string = 'assets/image-bg/bg-image-1.jpeg';
+  public themeVideoUrl!: string;
+  public themeImageUrl!: string;
 
-  constructor(private meta: Meta, private title: Title) {
+
+  public ngAfterViewInit(): void {
+    this.setTheme(7)
+  }
+
+  constructor(private meta: Meta, private title: Title)  {
     this.meta.addTags([
       {name:'description', content:'Dmytro Zeleniuk | Senior Software Developer'},
       {name:'author', content:'Dmytro Zeleniuk'},
@@ -21,7 +34,7 @@ export class MainComponent {
     this.title.setTitle('Dmytro Zeleniuk | Senior Software Developer');
   }
 
-  public changeTheme(index: number): void {
+  public setTheme(index: number): void {
     this.themeVideoUrl = `assets/video-bg/bg-video-${index}.mp4`;
     this.themeImageUrl = `assets/image-bg/bg-image-${index}.jpeg`;
     this.video.nativeElement.src = this.themeVideoUrl;

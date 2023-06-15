@@ -1,7 +1,12 @@
 <section class="app-main">
   <img alt="logo" src="assets/images/bee-logo/Logo-light.png" class="app-main__logo">
-  <div class="video-wrapper">
-    <video #video playsinline autoplay muted loop>
+  <div class="video-wrapper" >
+    <video #video
+           playsinline
+           oncanplay="this.play()"
+           poster="{{themeImageUrl}}"
+           onloadedmetadata="this.muted=true"
+           loop>
       <source [src]="themeVideoUrl" type="video/mp4">
       <track [src]="themeImageUrl" kind="captions" srclang="en" label="english_captions">
     </video>
@@ -27,7 +32,7 @@
           <i class="fa-sharp fa-solid fa-paint-roller icon-default"></i>
         </button>
         <ul class="floatingMenu">
-          <li *ngFor="let number of [1,2,3,4,5,6,7]"><a (click)="changeTheme(number)">Theme {{number}}</a></li>
+          <li *ngFor="let number of [1,2,3,4,5,6,7]"><a (click)="setTheme(number)">Theme {{number}}</a></li>
         </ul>
       </div>
     </div>
