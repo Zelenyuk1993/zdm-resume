@@ -1,0 +1,13 @@
+<button class="btn" *ngIf="!wallets.length; else connectedContent" (click)="connect()">
+  {{btnText}}
+</button>
+<ng-template #connectedContent>
+  <div style="height: 30px"></div>
+</ng-template>
+
+<!--<button class="btn" *ngIf="wallets.length" (click)="disconnectAllWallets()">-->
+<!--  Disconnect-->
+<!--</button>-->
+
+
+

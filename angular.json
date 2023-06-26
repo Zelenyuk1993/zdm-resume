@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+
             "outputPath": "dist/zdm-resume",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -38,7 +39,44 @@
               "src/assets/js/scripts.js"
             ],
             "allowedCommonJsDependencies": [
-              "jquery"
+              "web3",
+              "events",
+              "@walletconnect/window-getters",
+              "@walletconnect/window-metadata",
+              "@walletconnect/socket-transport",
+              "@walletconnect/qrcode-modal",
+              "is-typedarray",
+              "typedarray-to-buffer",
+              "cross-fetch",
+              "@walletconnect/environment",
+              "bn.js",
+              "js-sha3",
+              "query-string",
+              "@coinbase/wallet-sdk",
+              "mersenne-twister",
+              "@metamask/jazzicon",
+              "eventemitter3",
+              "aes-js",
+              "scrypt-js",
+              "hash.js",
+              "copy-to-clipboard",
+              "qrcode",
+              "sturdy-websocket",
+              "bech32",
+              "bowser",
+              "joi",
+              "lodash.uniqby",
+              "lodash.partition",
+              "prismjs",
+              "codesandbox/lib/api/define",
+              "flickity",
+              "tallyho-detect-provider",
+              "@cedelabs/providers",
+              "fortmatic",
+              "@portis/web3",
+              "@infinitywallet/infinity-connector",
+              "buffer",
+              "@stablelib/ed25519"
             ],
             "serviceWorker": true,
             "ngswConfigPath": "ngsw-config.json"

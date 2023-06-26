@@ -1,8 +1,10 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: '<app-main></app-main>',
+  template: `
+    <app-main></app-main>
+    <web3-connect></web3-connect>
+  `,
 })
 export class AppComponent {}

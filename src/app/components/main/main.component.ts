@@ -12,17 +12,17 @@ import {Meta, Title} from "@angular/platform-browser";
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements AfterViewInit{
   @ViewChild('video') public video!: ElementRef;
   public themeVideoUrl!: string;
   public themeImageUrl!: string;
 
-
   public ngAfterViewInit(): void {
-    this.setTheme(7)
+    setTimeout((): void => {
+      this.setTheme(7);
+    });
   }
 
   constructor(private meta: Meta, private title: Title)  {
