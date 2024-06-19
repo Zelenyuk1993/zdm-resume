@@ -5,10 +5,8 @@ import { AppComponent } from './app.component';
 import {MainComponent} from "./components/main/main.component";
 import {FormsModule} from "@angular/forms";
 import { ServiceWorkerModule } from '@angular/service-worker';
-import {Web3ConnectModule} from "@b-ee/web3-connect";
-import {ConnectBtnModule} from "./components/connect-btn/connect-btn.module";
+
 import {AppService} from "./app.service";
-import {DonateModule} from "./components/donate/donate.module";
 
 @NgModule({
   declarations: [
@@ -18,9 +16,6 @@ import {DonateModule} from "./components/donate/donate.module";
   imports: [
     BrowserModule,
     FormsModule,
-    Web3ConnectModule,
-    ConnectBtnModule,
-    DonateModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
