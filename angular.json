@@ -110,10 +110,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "zdm-resume:build:production"
+              "buildTarget": "zdm-resume:build:production"
             },
             "development": {
-              "browserTarget": "zdm-resume:build:development"
+              "buildTarget": "zdm-resume:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -121,7 +121,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "zdm-resume:build"
+            "buildTarget": "zdm-resume:build"
           }
         },
         "test": {
