@@ -3,8 +3,7 @@ import {
   Input, ElementRef,
   ViewChild, EventEmitter,
   Renderer2, OnDestroy,
-  Output, LOCALE_ID,
-  Inject
+  Output,
 } from "@angular/core";
 import { IExperience } from "../experience-interfaces";
 import { SafariDateFormatterPipe } from "../../core/pipe/safari-date-formatter.pipe";
@@ -30,7 +29,6 @@ export class ExperienceTimelineComponent implements OnInit, OnDestroy {
   constructor(
     private elRef: ElementRef,
     private renderer: Renderer2,
-    @Inject(LOCALE_ID) public locale: string
   ) {}
 
   @Input() get currentPosition(): number {
@@ -165,7 +163,7 @@ export class ExperienceTimelineComponent implements OnInit, OnDestroy {
     const safariDateFormatterPipe = new SafariDateFormatterPipe();
     const safariDateFormatterPipeValue = safariDateFormatterPipe.transform(date);
 
-    const localizedDatePipe = new LocalizedDatePipe(this.locale);
+    const localizedDatePipe = new LocalizedDatePipe();
 
     let month: any = localizedDatePipe.transform(safariDateFormatterPipeValue, "MMM");
     const labelElement = this.renderer.createElement("div");

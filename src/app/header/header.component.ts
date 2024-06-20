@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, Inject, LOCALE_ID, AfterViewInit } from "@angular/core";
+import { Component, OnInit, Input, ViewChild, ElementRef, Renderer2, AfterViewInit } from "@angular/core";
 import { faBars, faShareAlt, faCloudDownloadAlt, IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { NgNavigatorShareService } from "ng-navigator-share";
 
@@ -23,7 +23,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   @ViewChild("shareBtn") shareBtn: ElementRef;
 
   constructor(
-    @Inject(LOCALE_ID) public locale: string,
     private renderer: Renderer2,
     ngNavigatorShareService: NgNavigatorShareService
   ) {

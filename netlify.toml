@@ -1,6 +1,6 @@
 # tell netlify about your build script and output directory
 
 [build]
-  command = "npm run build-locale"
+  command = "npm run build-prod"
   publish = "dist/zrm-resume"
 
