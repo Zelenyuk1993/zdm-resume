@@ -2,7 +2,7 @@
 
 [build]
   command = "npm run build-locale"
-  publish = "dist/en/"
+  publish = "dist/en"
 
 [[redirects]]
   from = "/"
