@@ -1,0 +1,264 @@
+[
+    {
+        "id": 1,
+        "position": 1,
+        "startAt": "09-01-2015",
+        "endAt": "05-01-2016",
+        "companyName": "Logos IT-Academy",
+        "website": "http://lgs.lviv.ua/",
+        "logo": "assets/template/experience/logo/logos-logo.svg",
+        "internationalizations": [
+            {
+                "language": "ukr",
+                "city": "Львів",
+                "country": "Україна",
+                "role": "Розробник інтерфейсу",
+                "description": "<b>Викладав фронтенд розробку</b> в ІТ-школі, де навчав студентів на основі HTML, CSS, JavaScript, а також сучасним фреймворкам і бібліотекам, таким як React та Vue.js. Забезпечував практичний підхід до навчання, проводячи інтерактивні поняття, проекти та код-рев'ю, щоб студенти могли ефективно отримати отримані знання на практиці."
+            },
+            {
+                "language": "en",
+                "city": "Lviv",
+                "country": "Ukraine",
+                "role": "Frontend Developer",
+                "description": "<b>Taught frontend development</b> at an IT school, where I instructed students in the fundamentals of HTML, CSS, and JavaScript, as well as modern frameworks and libraries such as React and Vue.js. Ensured a practical approach to learning by conducting interactive classes, projects, and code reviews, enabling students to effectively apply the acquired knowledge in practice."
+            }
+        ],
+        "technologies": [
+             "HTML", "CSS", "CSS3", "Javascript", "jQuery", "AJAX", "Angular", "Vue.js", "Wordpress"
+        ],
+        "medias": [
+            {
+                "icon": "facebook",
+                "title": "Facebook Logos IT-Academy",
+                "http": "https://www.facebook.com/lgs.lviv.ua"
+            },
+            {
+              "icon": "linkedin",
+              "title": "LinkedIn Logos IT-Academy",
+              "http": "https://www.linkedin.com/company/logos-training-center/about/"
+            },
+            {
+              "icon": "instagram",
+              "title": "Instagram Logos IT-Academy",
+              "http": "https://www.instagram.com/logos_it_academy/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/uberaba.jpg"
+    },
+    {
+        "id": 2,
+        "position": 2,
+        "startAt": "10-01-2016",
+        "endAt": "11-01-2017",
+        "companyName": "Dengo Systems",
+        "website": "https://www.dengo-systems.com/en",
+        "logo": "assets/template/experience/logo/dengo-systems-logo.png",
+        "internationalizations": [
+            {
+              "language": "ukr",
+              "city": "Львів",
+              "country": "Україна",
+              "role": "Розробник інтерфейсу",
+                "description": "<b>Фронтенд Розробник</b> в Dengo Systems. Як фронтенд розробник у Dengo Systems, я спеціалізувався на створенні візуально привабливих та функціональних користувацьких інтерфейсів. Мої обов'язки включали:\n\nРозробку адаптивних та зручних веб-додатків з використанням HTML, CSS та JavaScript.\nРоботу з сучасними фреймворками та бібліотеками, такими як React, Angular або Vue.js, для створення динамічних та інтерактивних веб-сторінок.\nСпівпрацю з дизайнерами, бекенд-розробниками та іншими зацікавленими сторонами для забезпечення безшовної інтеграції UI/UX-дизайнів та бекенд-функціональності.\nОптимізацію веб-додатків для максимальної швидкості та масштабованості.\nЗабезпечення крос-браузерної сумісності та вирішення будь-яких виникаючих проблем.\nУчасть у код-рев'ю, надання конструктивного зворотного зв'язку та постійне вдосконалення кодової бази.\nПідтримку актуальності знань щодо останніх тенденцій індустрії та найкращих практик для надання передових рішень.\nУ цій ролі я прагнув надавати високоякісні цифрові досвіди, що підвищують залучення та задоволеність користувачів, сприяючи загальному успіху компанії."
+            },
+            {
+                "language": "en",
+                "city": "Lviv",
+                "country": "Ukraine",
+                "role": "Frontend Developer",
+                "description": "<b>Front-end Developer</b> at Dengo Systems. As a front-end developer at Dengo Systems, I specialized in creating visually appealing and highly functional user interfaces. My responsibilities included:\n\nDeveloping responsive and user-friendly web applications using HTML, CSS, and JavaScript.\nWorking with modern frameworks and libraries, such as React, Angular, or Vue.js, to build dynamic and interactive web pages.\nCollaborating with designers, back-end developers, and other stakeholders to ensure seamless integration of UI/UX designs and back-end functionalities.\nOptimizing web applications for maximum speed and scalability.\nEnsuring cross-browser compatibility and addressing any issues that arose.\nParticipating in code reviews, providing constructive feedback, and continuously improving the codebase.\nStaying up-to-date with the latest industry trends and best practices to deliver cutting-edge solutions.\nIn this role, I aimed to deliver high-quality digital experiences that enhanced user engagement and satisfaction, while contributing to the overall success of the company."
+            }
+        ],
+        "technologies": [
+             "HTML", "CSS", "CSS3", "Javascript", "jQuery", "Angular.js", "Wordpress", "Ionic"
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Dengo Systems",
+                "http": "https://www.linkedin.com/company/dengo-systems/"
+            }
+
+        ],
+        "backgroundUrl": "assets/template/experience/rio.jpg"
+    },
+    {
+        "id": 3,
+        "position": 3,
+        "startAt": "11-01-2017",
+        "endAt": "06-01-2021",
+        "companyName": "OGDSolutions OÜ",
+        "website": "https://ogd-solutions.com",
+        "logo": "assets/template/experience/logo/OGDSolutions-logo.svg",
+        "internationalizations": [
+            {
+                "language": "ukr",
+                "city": "Львів",
+                "country": "Україна",
+                "role": "Старший Розробник інтерфейсу",
+                "description": "<b>Старший інтерфейсний розробник (Angular, Ionic) у Gigway</b> Розроблено та надано мобільний додаток для Android та IOS з використанням фреймворку Ionic 4.\nОбов'язки:\nСтворення мобільного додатку, додавання нових сервісів (аналітика, push-повідомлення, реклама).\nРозробка нових функцій для користувача;\nОптимізація цієї програми для максимальної швидкості та масштабованості;\nМодульне тестування."
+            },
+            {
+                "language": "en",
+                "city": "Lviv",
+                "country": "Ukraine",
+                "role": "Senior Frontend Developer (Angular)",
+                "description": "<b>Senior Front End Developer (Angular, Ionic) at Gigway</b> Designed and delivered mobile application for Android and IOS using the Ionic 4 framework.\nResponsibilities:\nCreating mobile app, adding new services (analytics, push notifications, advertising).\nDevelopment of new user-facing features;\nOptimizing this application for maximum speed and scalability;\nUnit testing."
+            }
+        ],
+        "technologies": [
+             "HTML", "HTML5", "CSS", "CSS3", "Javascript", "jQuery", "Google APIs", "Ionic", "Angular", "Cordova", "TypeScript", "BitBucket", "Jira", "Git"
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn OGDSolutions OÜ",
+                "http": "https://www.linkedin.com/company/ogd-solutions/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/sao-paulo.jpg"
+    },
+    {
+        "id": 4,
+        "position": 4,
+        "startAt": "06-01-2021",
+        "endAt": "02-01-2022",
+        "companyName": "Applicature",
+        "website": "https://applicature.com",
+        "logo": "https://applicature.com/wp-content/uploads/2019/03/applicature-logo-1.png",
+        "internationalizations": [
+            {
+                "language": "ukr",
+                "city": "Київ",
+                "country": "Україна",
+                "role": "Технічний інженер програмного забезпечення",
+                "description": "Працював на посаді <b>технічного керівника</b>. Розроблено та надано інструмент для мережевих рішень блокчейн (багатомережевий міст, платіжний шлюз, інтеграція початкової пропозиції DEX). Робота над оновленням технічного стеку, включаючи оновлення фреймворку Angular і підвищення продуктивності системи. Робота в команді з іншими техніками веде до визначення довгострокового шляху до рефакторингу монолітної системи. До проекту введено процес CI разом із модульним тестуванням, лінтером і форматувальником коду. Встановив стандарти коду, PR-процес і практики кодування в рамках проекту. Робота над оцінкою характеристик проекту. Наставництво менш досвідчених інженерів, допомагаючи їм просуватися в кар’єрі. Переклад бізнес-вимог в історії користувачів для інженерів і забезпечення технічного дизайну для реалізації."
+            },
+            {
+                "language": "en",
+                "city": "Kiev",
+                "country": "Ukraine",
+                "role": "Technical Software Engineer",
+                "description": "Worked on <b>Technical Lead</b> position. Designed and delivered a tool for blockchain network solutions (Multy-network Bridge, Payment Gateway, Initial DEX offering integration). Working on tech stack updates, including angular framework upgrades and performance improvement of the system. Working in a team with other tech leads to define a long-term path to refactoring the monolithic system. Introduced CI process to the project together with unit test, linter, and the code formatter. Established the code standards, PR process and coding practices within the project. Working on the project's features estimation. Mentoring the less experienced engineers helping them to advance in their careers. Translating business requirements into user stories for the engineers and providing technical design for the implementation."
+            }
+        ],
+        "technologies": [
+            "HTML5", "CSS3", "Javascript", "jQuery", "Angular", "TypeScript", "Web3", "React", "Blockchain", "Mobix", "RxJS", "Firebase", "Unit Tests", "TDD", "Semantic HTML"
+        ],
+        "medias": [
+            {
+              "icon": "linkedin",
+              "title": "LinkedIn Applicature",
+              "http": "https://www.linkedin.com/company/applicature/"
+            },
+            {
+                "icon": "youtube",
+                "title": "YouTube Applicature",
+                "http": "https://www.youtube.com/channel/UC0Nktx_g61c_x-1SLjJSE2g"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Applicature",
+                "http": "https://www.facebook.com/applicature/"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/utrecht.jpg"
+    },
+    {
+        "id": 5,
+        "position": 5,
+        "startAt": "06-01-2022",
+        "endAt": "11-01-2022",
+        "companyName": "Capgemini",
+        "website": "https://www.capgemini.com",
+        "logo": "assets/template/experience/logo/capgemini-logo.svg",
+        "internationalizations": [
+            {
+                "language": "ukr",
+                "city": "Нью-Йорк",
+                "country": "США",
+                "role": "Старший консультант",
+                "description": "<b>Старший Angular Розробник</b> в <b>Morgan Stanley</b> </br> Опис проекту: Система пенсійного забезпечення.</br>Обов'язки:Створення повторно використовуваних компонентів з архітектурою, орієнтованою на сервіси.</br>Відповідальний за код-рев'ю, рефакторинг модулів для підвищення продуктивності системи.</br>Робота в команді, участь у розробці макета UI та фронтенд-програмування для веб-додатку, який відповідає вимогам клієнта.</br>Відповідальний за створення системи модульного тестування."
+            },
+            {
+                "language": "en",
+                "city": "New York",
+                "country": "United States",
+                "role": "Senior Consultant",
+                "description": "<b>Senior Angular Developer</b> at <b>Morgan Stanley</b> </br> Project description: Retirement system.</br> Responsibilities:\n- Building reusable components with service-oriented architects.\n </br> - Responsible for code review, refactoring modules to increase productivity of a system.\n </br> - Worked in a team, involved in developing the UI layout and front-end programming for web application that matches requirements of Client.\n </br> - Responsible for creation unit tests system."
+            }
+        ],
+        "technologies": [
+            "Java", "Spring Boot", "Play Framework", "Javascript", "jQuery", "AngularJS", "NoSQL", "MongoDB", "SQL", "PostgreSQL", "Unit Tests", "Integration Tests", "Versioning Control", "BitBucket", "Git", "Maven", "Scrum", "Linux"
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Capgemini",
+                "http": "https://www.linkedin.com/company/capgemini/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Capgemini",
+                "http": "https://www.facebook.com/Capgemini/"
+            },
+            {
+              "icon": "instagram",
+              "title": "Instagram Capgemini",
+              "http": "https://www.instagram.com/capgemini/"
+            },
+            {
+                "icon": "youtube",
+                "title": "QAT Capgemini",
+                "http": "https://www.youtube.com/channel/UCRHMhVXEsPtTQ60dkxg8VXw"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/uberaba.jpg"
+    },
+    {
+        "id": 6,
+        "position": 6,
+        "startAt": "01-01-2023",
+        "endAt": "01-01-2024",
+        "companyName": "Interactive Resources - iR · Contract",
+        "website": "http://irtalent.com",
+        "logo": "assets/template/experience/logo/interactive-resources-logo.png",
+        "internationalizations": [
+            {
+                "language": "ukr",
+                "city": "Нью Джерсі",
+                "country": "США",
+                "role": "Старший розробник фронтенду",
+                "description": "<b>Старший розробник фронтенду</b> в компанії <b>Lexmark</b>. </br>Працював із Angular, включаючи оновлення фреймворку Angular і покращення продуктивності системи.</br>Командна робота з іншими фахівцями веде до визначення довгострокового шляху рефакторингу монолітної системи. Робота з оцінки характеристик проекту. Покриття коду за допомогою фреймворку Karma для модульних тестів.</br> Брав участь у щоденних стендапах і вирішував технічні проблеми."
+            },
+            {
+                "language": "en",
+                "city": "New Jersey",
+                "country": "United States",
+                "role": "Senior Frontend Developer",
+                "description": "<b>Senior Front End Developer</b> in <b>Lexmark</b> company. </br>Worked with Angular Project including updating the angular framework and improving system performance. </br>Teamwork with other technicians leads to defining a long-term path to refactoring a monolithic system. Work on the assessment of project characteristics. Code coverage using the Karma framework for Unit tests.</br>Took part in daily stand-ups and solved technical problems."
+            }
+        ],
+        "technologies": [
+          "Angular", "Typescript", "Javascript", "NgRx", "Versioning Control", "DevOps", "CI/CD", "JUnit", "Karma", "Jasmine", "Microsoft Azure", "Jenkins", "Docker", "NPM", "Gradle", "Jira", "E2E", "Magento", "Jira"
+        ],
+        "medias": [
+            {
+                "icon": "linkedin",
+                "title": "LinkedIn Interactive Resources - iR",
+                "http": "https://www.linkedin.com/company/interactive-resources---ir/"
+            },
+            {
+                "icon": "facebook",
+                "title": "Facebook Interactive Resources - iR",
+                "http": "https://www.facebook.com/irtalentdotcom/"
+            },
+            {
+                "icon": "youtube",
+                "title": "Youtube Interactive Resources - iR",
+                "http": "https://www.youtube.com/channel/UCJUSBCP3RidGy31kV7Ey9Cg"
+            }
+        ],
+        "backgroundUrl": "assets/template/experience/rotterdam.jpg"
+    }
+]

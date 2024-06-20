@@ -1,0 +1,12 @@
+<section id="welcome">
+    <div class="layer_one">
+        <div class="avatar-container">
+            <img loading="lazy" class="illustration"
+                 [src]="currentImageUrl"
+                 (mouseover)="changeImage(imageUrls[1])"
+                 (mouseout)="changeImage(imageUrls[0])" alt="{{characterName}}"/>
+            <app-welcome-background></app-welcome-background>
+        </div>
+        <app-welcome-dialog></app-welcome-dialog>
+    </div>
+</section>

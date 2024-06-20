@@ -1,0 +1,47 @@
+{
+    "internationalizations": [
+        {
+            "language": "ukr",
+            "description": "З більш ніж <i>семирічним</i>  досвідом у розробці додатків, системній архітектурі та дизайні, я маю великий багаж знань у різних сферах. Моя основна увага була зосереджена на <i>TypeScript, Angular, Ionic та JavaScript</i>. Зокрема, я набув значного досвіду в інтеграції смарт-контрактів блокчейну та роботі з технологією  <i>Web3</i>. </br></br> Протягом моєї кар'єри я постійно досягав успіху у впровадженні високоефективних Front-End рішень, підкреслюючи мої можливості як керівника команди розробників, що володіє Angular framework. Я вмію успішно очолювати та співпрацювати з динамічними командами розробників, забезпечуючи успішне впровадження веб-додатків, які відповідають як технічним, так і бізнес-цілям."
+        },
+        {
+            "language": "en",
+            "description": "With over <i>seven years</i> of proven expertise in application development, systems architecture, and design, I possess a wealth of experience that spans various domains. My primary focus has been on <i>Front-End</i>, development, where I've demonstrated proficiency in technologies such as <i>TypeScript, Angular, Ionic, and JavaScript.</i> Notably, I've gained substantial experience in integrating blockchain smart contracts and working with <i>Web3</i> technology. </br></br> Throughout my career, I have consistently excelled in delivering high-impact front-end solutions, underscoring my capabilities as a Team Lead Developer proficient in the Angular framework. I am adept at spearheading and collaborating within dynamic development teams, ensuring the successful deployment of web applications that align with both technical and business objectives.\nFront-End Development: Extensive experience in TypeScript, Angular, Ionic, and JavaScript, resulting in the creation of user-friendly and innovative web interfaces."
+        }
+    ],
+    "medias": [
+        {
+            "icon": "linkedin",
+            "title": "LinkedIn",
+            "http": "https://www.linkedin.com/in/dmytro-zeleniuk/"
+        },
+        {
+            "icon": "github",
+            "title": "GitHub",
+            "http": "https://github.com/Zelenyuk1993"
+        },
+        {
+            "icon": "facebook",
+            "title": "Facebook",
+            "http": "https://www.facebook.com/dima.zelenyuk"
+        }
+    ],
+    "hobbies": [
+        {
+            "icon": "biking",
+            "title": "Cycling"
+        },
+        {
+            "icon": "dumbbell",
+            "title": "Gym"
+        },
+        {
+            "icon": "suitcase-rolling",
+            "title": "Travel"
+        },
+        {
+            "icon": "book",
+            "title": "Read"
+        }
+    ]
+}
