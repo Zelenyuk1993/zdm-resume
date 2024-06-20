@@ -2,5 +2,5 @@
 
 [build]
   command = "npm run build-prod"
-  publish = "dist/zrm-resume"
+  publish = "dist/zdm-resume"
 
