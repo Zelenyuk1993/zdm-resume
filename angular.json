@@ -77,20 +77,12 @@
             },
             "en": {
               "aot": true,
-              "localize": [
-                "en"
-              ],
               "outputPath": "dist/en/",
-              "baseHref": "/en/",
               "i18nMissingTranslation": "error"
             },
             "ukr": {
               "aot": true,
-              "localize": [
-                "ukr"
-              ],
               "outputPath": "dist/ukr/",
-              "baseHref": "/ukr/",
               "i18nMissingTranslation": "error"
             },
             "es5": {

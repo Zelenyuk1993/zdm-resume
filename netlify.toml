@@ -4,8 +4,6 @@
   command = "npm run build-locale"
   publish = "dist"
 
-# redirect to german, spanish or english landing pages
-
 [[redirects]]
   from = "/"
   to = "/en"
