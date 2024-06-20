@@ -1,0 +1,368 @@
+@media screen and (max-width: 1024px) {
+
+    .skills {
+        top: 40px;
+        left: -65px;
+        img.background {
+          width: 550px;
+        }
+
+        .skill-icon {
+            width: 40px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 440px;
+              left: 15px;
+            }
+
+            &.second {
+              top: 360px;
+              left: -35px;
+            }
+
+            &.third {
+              top: 250px;
+              left: -50px;
+            }
+
+            &.fourth {
+              top: 135px;
+              left: -35px;
+            }
+
+            &.fifth {
+              top: 50px;
+              left: 10px;
+            }
+
+            &.sixth {
+              top: -15px;
+              left: 100px;
+            }
+
+            &.seventh {
+              top: -10px;
+              right: 85px;
+            }
+
+            &.eighth {
+                bottom: 140px;
+                right: -30px;
+            }
+
+            &.ninth {
+              bottom: 80px;
+              right: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .skills {
+      top: 40px;
+      left: -40px;
+
+        img.background {
+          width: 420px;
+        }
+
+        .skill-icon {
+            width: 35px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 320px;
+              left: -10px;
+            }
+
+            &.second {
+                top: 260px;
+                left: -35px;
+            }
+
+            &.third {
+              top: 185px;
+              left: -45px;
+            }
+
+            &.fourth {
+              top: 105px;
+              left: -33px;
+            }
+
+            &.fifth {
+                top: 40px;
+                left: 0;
+            }
+
+            &.sixth {
+              top: -5px;
+              left: 55px;
+            }
+
+            &.seventh {
+              top: -10px;
+              right: 60px;
+            }
+
+            &.eighth {
+                bottom: 120px;
+                right: -35px;
+            }
+
+            &.ninth {
+              bottom: 70px;
+              right: -5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .skills {
+      top: 60px;
+      left: -30px;
+        img.background {
+            width: 330px;
+        }
+
+        .skill-icon {
+            width: 27px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 245px;
+              left: -10px;
+            }
+
+            &.second {
+                top: 190px;
+                left: -35px;
+            }
+
+            &.third {
+              top: 125px;
+              left: -40px;
+            }
+
+            &.fourth {
+              top: 60px;
+              left: -20px;
+            }
+
+            &.fifth {
+              top: 10px;
+              left: 15px;
+            }
+
+            &.sixth {
+                top: -20px;
+                left: 65px;
+            }
+
+            &.seventh {
+              top: -10px;
+              right: 50px;
+            }
+
+            &.eighth {
+              bottom: 105px;
+              right: -30px;
+            }
+
+            &.ninth {
+              bottom: 65px;
+              right: -10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .skills {
+        top: 25px;
+
+        img.background {
+            width: 270px;
+        }
+
+        .skill-icon {
+            width: 22px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 200px;
+              left: -10px;
+            }
+
+            &.second {
+                top: 160px;
+                left: -27px;
+            }
+
+            &.third {
+              top: 110px;
+              left: -35px;
+            }
+
+            &.fourth {
+              top: 65px;
+              left: -25px;
+            }
+
+            &.fifth {
+                top: 20px;
+                left: 0;
+            }
+
+            &.sixth {
+              top: -10px;
+              left: 40px;
+            }
+
+            &.seventh {
+              top: -10px;
+              right: 40px;
+            }
+
+            &.eighth {
+              bottom: 80px;
+              right: -25px;
+            }
+
+            &.ninth {
+              bottom: 50px;
+              right: -5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .skills {
+        top: 25px;
+
+        img.background {
+            width: 230px;
+        }
+
+        .skill-icon {
+            width: 18px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 170px;
+              left: -5px;
+            }
+
+            &.second {
+              top: 135px;
+              left: -22px;
+            }
+
+            &.third {
+                top: 95px;
+                left: -27px;
+            }
+
+            &.fourth {
+              top: 55px;
+              left: -17px;
+            }
+
+            &.fifth {
+                top: 20px;
+                left: 2px;
+            }
+
+            &.sixth {
+              top: -5px;
+              left: 30px;
+            }
+
+            &.seventh {
+              top: -5px;
+              right: 30px;
+            }
+
+            &.eighth {
+                bottom: 70px;
+                right: -20px;
+            }
+
+            &.ninth {
+              bottom: 45px;
+              right: -5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .skills {
+        top: 20px;
+        left: -10px;
+
+
+      img.background {
+            width: 190px;
+        }
+
+        .skill-icon {
+            width: 16px;
+
+            // Specifications for each icon positioning.
+            &.first {
+              top: 145px;
+              left: 0;
+            }
+
+            &.second {
+                top: 115px;
+                left: -10px;
+            }
+
+            &.third {
+              top: 75px;
+              left: -15px;
+            }
+
+            &.fourth {
+              top: 40px;
+              left: -5px;
+            }
+
+            &.fifth {
+              top: 10px;
+              left: 10px;
+            }
+
+            &.sixth {
+                top: -10px;
+                left: 35px;
+            }
+
+            &.seventh {
+              top: 0;
+              right: 25px;
+            }
+
+            &.eighth {
+                bottom: 50px;
+                right: -15px;
+            }
+
+            &.ninth {
+              bottom: 30px;
+              right: 0;
+            }
+        }
+    }
+}

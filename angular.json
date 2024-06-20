@@ -5,11 +5,7 @@
   "projects": {
     "zdm-resume": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,106 +13,77 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-
             "outputPath": "dist/zdm-resume",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": ["zone.js","src/polyfills.ts"],
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "inlineStyleLanguage": "scss",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/manifest.webmanifest",
+              "src/sitemap.xml",
+              "src/robots.txt",
               "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/scripts.js"
-            ],
-            "allowedCommonJsDependencies": [
-              "web3",
-              "events",
-              "@walletconnect/window-getters",
-              "@walletconnect/window-metadata",
-              "@walletconnect/socket-transport",
-              "@walletconnect/qrcode-modal",
-              "is-typedarray",
-              "typedarray-to-buffer",
-              "cross-fetch",
-              "@walletconnect/environment",
-              "bn.js",
-              "js-sha3",
-              "query-string",
-              "@coinbase/wallet-sdk",
-              "mersenne-twister",
-              "@metamask/jazzicon",
-              "eventemitter3",
-              "aes-js",
-              "scrypt-js",
-              "hash.js",
-              "copy-to-clipboard",
-              "qrcode",
-              "sturdy-websocket",
-              "bech32",
-              "bowser",
-              "joi",
-              "lodash.uniqby",
-              "lodash.partition",
-              "prismjs",
-              "codesandbox/lib/api/define",
-              "flickity",
-              "tallyho-detect-provider",
-              "@cedelabs/providers",
-              "fortmatic",
-              "@portis/web3",
-              "@infinitywallet/infinity-connector",
-              "buffer",
-              "@stablelib/ed25519"
-            ],
+            "scripts": [],
             "serviceWorker": true,
-            "ngswConfigPath": "ngsw-config.json"
+            "ngswConfigPath": "ngsw-config.json",
+            "allowedCommonJsDependencies": [
+              "idb",
+              "firebase"
+            ]
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+            "es5": {
+              "tsConfig": "./tsconfig.es5.json"
             }
-          },
-          "defaultConfiguration": "production"
+          }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "zdm-resume:build"
+          },
           "configurations": {
             "production": {
               "browserTarget": "zdm-resume:build:production"
             },
-            "development": {
-              "browserTarget": "zdm-resume:build:development"
+            "es5": {
+              "browserTarget": "zdm-resume:build:es5"
             }
-          },
-          "defaultConfiguration": "development"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -127,25 +94,40 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing",
-              "src/polyfills.ts"
-
-            ],
+            "main": "src/test.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/manifest.webmanifest",
               "src/manifest.webmanifest"
             ],
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/scripts.js"
+            "scripts": []
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "zdm-resume:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "zdm-resume:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         }
@@ -153,6 +135,9 @@
     }
   },
   "cli": {
-    "analytics": "b02fb57a-634a-45db-9a22-5c124098eb21"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": false
   }
 }
