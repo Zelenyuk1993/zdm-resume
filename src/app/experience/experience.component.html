@@ -3,17 +3,17 @@
         <div class="container">
             <div class="top-container">
                 <div class="title">
-                    <h1 i18n="nav@@experiences">Experiences</h1>
+                    <h1>Experiences</h1>
                 </div>
                 <div class="navigation">
                     <a href="javascript:void(0)" class="previous" (click)="onClickPrevious()" [ngClass]="{'disabled': disablePreviousNavigation()}">
-                        <fa-icon [icon]="['fas', 'chevron-left']" class="icon" i18n-title="exp.nav@@previous" title="Previous"></fa-icon>
-                        <span i18n="exp.nav@@previous">Previous</span>
+                        <fa-icon [icon]="['fas', 'chevron-left']" class="icon" title="Previous"></fa-icon>
+                        <span>Previous</span>
                     </a>
                     <div class="devider">|</div>
                     <a href="javascript:void(0)" class="next" (click)="onClickNext()" [ngClass]="{'disabled': disableNextNavigation()}">
-                        <span i18n="exp.nav@@next">Next</span>
-                        <fa-icon [icon]="['fas', 'chevron-right']" class="icon" i18n-title="exp.nav@@next" title="Next"></fa-icon>
+                        <span>Next</span>
+                        <fa-icon [icon]="['fas', 'chevron-right']" class="icon" title="Next"></fa-icon>
                     </a>
                 </div>
 
@@ -22,13 +22,13 @@
                     <a href="javascript:void(0)" class="previous" (click)="onClickPrevious()" [ngClass]="{'disabled': disablePreviousNavigation()}">
                        <div class="molding">
                            <span [innerHtml]="previousYear | safariDateFormatter | localizedDate:'yyyy'"></span>
-                           <fa-icon [icon]="['fas', 'chevron-left']" class="icon" i18n-title="exp.nav@@previous" title="Previous"></fa-icon>
+                           <fa-icon [icon]="['fas', 'chevron-left']" class="icon" title="Previous"></fa-icon>
                         </div>
                     </a>
                     <div class="current"><span [innerHtml]="currentYear | safariDateFormatter | localizedDate:'yyyy'"></span></div>
                     <a href="javascript:void(0)" class="next" (click)="onClickNext()" [ngClass]="{'disabled': disableNextNavigation()}">
                         <div class="molding">
-                            <fa-icon [icon]="['fas', 'chevron-right']" class="icon" i18n-title="exp.nav@@next" title="Next"></fa-icon>
+                            <fa-icon [icon]="['fas', 'chevron-right']" class="icon" title="Next"></fa-icon>
                             <span [innerHtml]="nextYear | safariDateFormatter | localizedDate:'yyyy'"></span>
                         </div>
                     </a>

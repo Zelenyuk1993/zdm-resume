@@ -32,7 +32,7 @@
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
-    
+
     // This is supported natively by Chrome, Opera and Safari. Firefox and IE hasn't implemented it yet (bugzil.la).
     -webkit-transition: background-image 0.3s ease-in-out;
     -moz-transition: background-image 0.3s ease-in-out;
@@ -87,7 +87,7 @@
             text-decoration: none;
             color: white;
         }
-    
+
         .previous {
             flex-grow: 2;
             cursor: pointer;
@@ -97,18 +97,18 @@
             -ms-transition: text-shadow 0.3s linear;
             -o-transition: text-shadow 0.3s linear;
             transition: text-shadow 0.3s linear;
-    
+
             &.disabled {
                 cursor: no-drop;
                 opacity: 0.6;
                 pointer-events: none;
             }
-     
+
             &:hover {
                 text-shadow: 0 0 15px white;
             }
         }
-        
+
         span {
             margin: 10px;
         }
@@ -116,7 +116,7 @@
         .devider {
             flex-grow: 1;
         }
-    
+
         .next {
             flex-grow: 2;
             cursor: pointer;
@@ -126,7 +126,7 @@
             -ms-transition: text-shadow 0.3s linear;
             -o-transition: text-shadow 0.3s linear;
             transition: text-shadow 0.3s linear;
-            
+
             &.disabled {
                 cursor: no-drop;
                 opacity: 0.6;
@@ -167,7 +167,7 @@
                 justify-content: left;
 
                 img {
-                    height: 90px;
+                  height: 60px;
                 }
             }
 
@@ -244,7 +244,7 @@
                 -moz-animation-timing-function: ease-in-out;
                 animation-timing-function: ease-in-out;
             }
-            
+
             .selected {
                 position: relative;
                 z-index: 2;
@@ -255,7 +255,7 @@
                 -o-transform: translateX(0);
                 transform: translateX(0);
             }
-            
+
             // Defines the animations of the navigation ordered list.
             li.enter-right, li.leave-right {
                 -webkit-animation-name: cd-enter-right;
@@ -294,7 +294,7 @@
                 }
             }
         }
-        
+
         .social-media {
             text-align: right;
             margin-top: 1em;

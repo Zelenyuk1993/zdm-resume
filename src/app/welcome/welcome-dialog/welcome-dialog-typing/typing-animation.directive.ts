@@ -1,13 +1,8 @@
 import {
     Directive, OnInit,
-    ElementRef, Input, Inject, LOCALE_ID
+    ElementRef, Input,
 } from "@angular/core";
 import { Typed } from "./typed";
-
-interface IPhrase {
-    language: string;
-    phrases: string[];
-}
 
 @Directive({
     selector: "[appTypingAnimation]"
@@ -18,23 +13,19 @@ export class TypingAnimationDirective implements OnInit {
     @Input() phrasePeriod: number;
     @Input() typeSpeed: number;
     @Input() startDelay: number;
-    @Input() data: IPhrase[];
+    @Input() data: string[] = [ "My name is Dmytro.", "Be welcome to my Web Resume.", "Down below, you will know me better... :)" ];
 
     typed: Typed;
-    phrases: string[] = [];
+    phrases: string[];
 
     constructor (
         private elRef: ElementRef,
-        @Inject(LOCALE_ID) public locale: string
+        // @Inject(LOCALE_ID) public locale: string
     ) {}
 
-    _flatMap = (f, xs) => xs.reduce((acc,x) => acc.concat(f(x)), []);
 
     ngOnInit () {
-
-        const nestedArr: IPhrase[] = this.data.filter(el => el.language === (this.locale || "en"));
-        this.phrases = this._flatMap(el => el.phrases, nestedArr);
-
+       this.phrases = this.data;
         if(this.checkContent()) {
             this.createTyped();
         }

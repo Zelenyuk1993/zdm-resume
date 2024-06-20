@@ -10,15 +10,15 @@
         <meta itemprop="birthDate" content="1993-11-02" />
         <meta itemprop="url" content="https://www.zdm-official.com" />
         <div class="first-column">
-            <h1 i18n="nav@@aboutMe">About me</h1>
+            <h1>About me</h1>
             <h2><span itemprop="name">{{ name }}</span></h2>
             <p class="years-old">
                 <span itemprop="yearsOld">{{ yearsOld }}</span>
-                &nbsp;<span i18n="about@@yearsOld">years old</span>
+                &nbsp;<span>years old</span>
             </p>
             <p class="text" appInternationalization [data]="aboutData?.internationalizations" property='description' itemprop="summary">Loading...</p>
             <div class="hobbies">
-                <h3 i18n="nav@@hobbies">Hobbies</h3>
+                <h3>Hobbies</h3>
                 <fa-icon *ngFor="let hobby of aboutData?.hobbies" [icon]="['fas', hobby.icon]" class="icon" title="{{ hobby.title }}" itemprop="hobby"></fa-icon>
             </div>
         </div>

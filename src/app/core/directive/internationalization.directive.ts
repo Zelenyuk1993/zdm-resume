@@ -1,5 +1,4 @@
-import { Directive, ElementRef, Input, OnInit} from "@angular/core";
-import { LOCALE_ID, Inject } from "@angular/core";
+import { Directive, ElementRef, Input} from "@angular/core";
 import { EllipsisPipe } from "../pipe/ellipsis.pipe";
 
 @Directive({ selector: "[appInternationalization]" })
@@ -17,7 +16,6 @@ export class InternationalizationDirective {
 
     constructor(
         private el: ElementRef,
-        @Inject(LOCALE_ID) public locale: string
     ) {}
 
     set data(value: any[]) {
@@ -32,7 +30,7 @@ export class InternationalizationDirective {
         if(this._data) {
 
             const value: string[] = this._data
-                .filter(element => element.language === (this.locale || "en"))
+                .filter(element => element.language === "en")
                 .map(element => element[this.property]) || [""];
 
             return this.ellipsis > 0 ? new EllipsisPipe().transform(value[0], this.ellipsis) : value;

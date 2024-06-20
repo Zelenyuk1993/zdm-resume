@@ -52,7 +52,7 @@ header {
 
                     &:not(.active):hover {
                         background-color: #fff;
-                        -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16); 
+                        -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
                         box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
                     }
                 }
@@ -70,9 +70,9 @@ header {
 
         .frame {
             background-color: #fff;
-            display: inline-block; 
+            display: inline-block;
             border-radius: 15px;
-            -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16); 
+            -webkit-box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
             box-shadow: 0 0 9px 0 rgba(112, 112, 112, 0.16);
 
             ul {
@@ -126,7 +126,6 @@ header {
 
     .child.share-container {
         // visible only for mobile browsers that accept share intent.
-        display: none;
         margin-left: 10px;
         background-color: #fff;
         padding: 11px;
@@ -141,6 +140,6 @@ header {
             &:hover {
                 color: #222f5c;
             }
-        }        
+        }
     }
 }

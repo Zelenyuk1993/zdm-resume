@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    
+
     .about-container .second-column .profile-picture {
         width: 370px;
         height: 370px;
@@ -21,14 +21,14 @@
 }
 
 @media screen and (max-width: 960px) {
-    
+
     .about-container {
         width: 80vw;
         flex-wrap: wrap;
     }
 
     .first-column {
-        
+
         h1 {
             font-size: 20px;
         }
@@ -37,7 +37,7 @@
             font-size: 32px;
         }
 
-        p.years-old {    
+        p.years-old {
             font-size: 16px;
         }
 
@@ -68,25 +68,25 @@
     .about-container {
 
         .first-column {
-    
+
             h2 {
                 font-size: 30px;
             }
-    
-            .icon { 
+
+            .icon {
                 margin: 20px;
             }
-    
+
             p.text {
                 font-size: 16px;
                 margin-right: 0;
             }
         }
-    
+
         .second-column .profile-picture {
-            width: 340px;
-            height: 340px;
-        }    
+          width: 240px;
+          height: 240px;
+        }
     }
 }
 
@@ -98,22 +98,22 @@
 
     .about-container {
         width: 75vw;
-        
+
         .first-column {
-            
+
             h2 {
                 font-size: 26px;
             }
-            
+
             .icon {
                 margin: 0.5em;
             }
-        } 
+        }
     }
 }
 
 @media screen and (max-width: 460px) {
-    
+
     .about-container {
 
         .first-column {
@@ -128,7 +128,7 @@
 
             p {
 
-                &.years-old {    
+                &.years-old {
                     font-size: 14px;
                 }
 
@@ -147,8 +147,8 @@
     .second-column {
 
         .profile-picture {
-            width: 280px;
-            height: 280px;
+          width: 240px;
+          height: 240px;
 
             .social-media .icon {
                 font-size: 50px;
@@ -160,8 +160,8 @@
 @media screen and (max-width: 370px) {
 
     .about-container .second-column .profile-picture {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -179,10 +179,10 @@
         }
 
         .second-column {
-    
+
             .profile-picture {
-                width: 240px;
-                height: 240px;
+                width: 200px;
+                height: 200px;
             }
 
             .social-media .icon {

@@ -2,24 +2,5 @@
 
 [build]
   command = "npm run build-locale"
-  publish = "dist"
+  publish = "dist/zrm-resume"
 
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 302
-  force= true
-  conditions = {Language = ["en"]}
-
-[[redirects]]
-  from = "/"
-  to = "/ukr"
-  status = 302
-  force = true
-  conditions = {Language = ["ukr"]}
-
-[[redirects]]
-  from = "/"
-  to = "/en"
-  status = 302
-  force = true

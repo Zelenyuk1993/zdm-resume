@@ -9,19 +9,6 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "ukr": {
-            "translation": "src/locales/messages.ukr.xlf",
-            "baseHref": ""
-          },
-          "en": {
-            "translation": "src/locales/messages.en.xlf",
-            "baseHref": ""
-          }
-        }
-      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -45,7 +32,11 @@
             ],
             "scripts": [],
             "serviceWorker": true,
-            "ngswConfigPath": "ngsw-config.json"
+            "ngswConfigPath": "ngsw-config.json",
+            "allowedCommonJsDependencies": [
+              "idb",
+              "firebase"
+            ]
           },
           "configurations": {
             "production": {
@@ -65,7 +56,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
+                  "maximumWarning": "3mb",
                   "maximumError": "5mb"
                 },
                 {
@@ -74,16 +65,6 @@
                   "maximumError": "10kb"
                 }
               ]
-            },
-            "en": {
-              "aot": true,
-              "outputPath": "dist/en/",
-              "i18nMissingTranslation": "error"
-            },
-            "ukr": {
-              "aot": true,
-              "outputPath": "dist/ukr/",
-              "i18nMissingTranslation": "error"
             },
             "es5": {
               "tsConfig": "./tsconfig.es5.json"
@@ -98,12 +79,6 @@
           "configurations": {
             "production": {
               "browserTarget": "zdm-resume:build:production"
-            },
-            "en": {
-              "browserTarget": "zdm-resume:build:en"
-            },
-            "ukr": {
-              "browserTarget": "zdm-resume:build:ukr"
             },
             "es5": {
               "browserTarget": "zdm-resume:build:es5"

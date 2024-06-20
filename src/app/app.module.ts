@@ -10,10 +10,6 @@ import { PageNotFoundModule } from "./404/page-not-found.module";
 import { CoreModule } from "./core/core.module";
 import { Injectable, isDevMode } from "@angular/core";
 
-import localeEn from "@angular/common/locales/en";
-import localePt from "@angular/common/locales/pt";
-import localePtExtra from "@angular/common/locales/extra/pt";
-
 import { AngularFireModule } from "@angular/fire/compat";
 import { AngularFireDatabaseModule } from "@angular/fire/compat/database";
 import { AngularFireAnalyticsModule } from "@angular/fire/compat/analytics";
@@ -30,8 +26,6 @@ export class HammerConfig  extends HammerGestureConfig {
     };
 }
 
-registerLocaleData(localeEn, "en");
-registerLocaleData(localePt, "pt-BR", localePtExtra);
 @NgModule({
   imports: [
     BrowserModule,

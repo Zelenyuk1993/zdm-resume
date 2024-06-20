@@ -1,5 +1,6 @@
 export interface IExperience {
     id: number;
+    logo: string;
     position: number;
     companyName: string;
     website?: string;
