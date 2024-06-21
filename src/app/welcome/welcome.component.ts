@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -7,18 +7,22 @@ import { environment } from '../../environments/environment';
   styleUrls: ["./welcome.component.css", "./welcome-component.responsivity.css"],
 })
 
-export class WelcomeComponent {
+export class WelcomeComponent implements OnInit {
 
   public imageUrls: string[] = [
     './assets/template/welcome/dmytro-illustration-deff.png',
     './assets/template/welcome/dmytro-illustration-active.png',
   ];
-
-  public currentImageUrl: string = this.imageUrls[0];
   constructor() {}
 
-  changeImage(imageUrl: string): void {
-    this.currentImageUrl = imageUrl;
+  ngOnInit() {
+    document.addEventListener('DOMContentLoaded', () => {
+      const image = document.getElementById('animatedImage') as HTMLImageElement;
+      setTimeout(() => {
+        image.classList.add('fade-in');
+        image.src = this.imageUrls[1];
+      }, 0);
+    });
   }
   get characterName(): string {
     return environment.personal.name;

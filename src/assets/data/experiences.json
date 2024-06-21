@@ -254,11 +254,66 @@
                 "http": "https://www.facebook.com/irtalentdotcom/"
             },
             {
+              "icon": "instagram",
+              "title": "Instagram Interactive Resources - iR",
+              "http": "https://www.instagram.com/irtalent/"
+            },
+            {
                 "icon": "youtube",
                 "title": "Youtube Interactive Resources - iR",
                 "http": "https://www.youtube.com/channel/UCJUSBCP3RidGy31kV7Ey9Cg"
             }
         ],
         "backgroundUrl": "assets/template/experience/New-Jersey-1.jpg"
-    }
+    },
+    {
+    "id": 7,
+    "position": 7,
+    "startAt": "06-24-2024",
+    "companyName": "TEKsystems · Contract",
+    "website": "https://www.teksystems.com/",
+    "logo": "assets/template/experience/logo/tek-systems-logo.png",
+    "internationalizations": [
+      {
+        "language": "ukr",
+        "city": "New York",
+        "country": "США",
+        "role": "Старший розробник фронтенду",
+        "description": ""
+      },
+      {
+        "language": "en",
+        "city": "New York",
+        "country": "United States",
+        "role": "Software Engineer III",
+        "description": "I work as a Senior Developer <b>(Software Engineer III)</b> at <b>M&T Bank</b> company. </br>My role involves working on an Angular project, where I focus on updating the Angular framework and enhancing system performance. </br> I collaborate with other technicians to define a long-term strategy for refactoring a monolithic system and assess project characteristics. </br> I also use the Karma framework for unit test code coverage. </br>Additionally, I participate in daily stand-ups and solve technical problems."
+      }
+    ],
+    "technologies": [
+      "Angular", "Typescript", "Javascript", "NgRx", "RxJs" ,"Versioning Control", "AI", "DevOps", "CI/CD", "JUnit", "Karma", "Jasmine", "Microsoft Azure", "Docker", "NPM", "Gradle", "Jira", "E2E", "Jira"
+    ],
+    "medias": [
+      {
+        "icon": "linkedin",
+        "title": "LinkedIn TEKsystems",
+        "http": "https://www.linkedin.com/company/teksystems/posts/?feedView=all"
+      },
+      {
+        "icon": "facebook",
+        "title": "Facebook TEKsystems",
+        "http": "https://www.facebook.com/teksystems/"
+      },
+      {
+        "icon": "instagram",
+        "title": "Instagram TEKsystems",
+        "http": "https://www.instagram.com/teksystems/"
+      },
+      {
+        "icon": "youtube",
+        "title": "Youtube TEKsystems",
+        "http": "https://www.youtube.com/c/teksystems"
+      }
+    ],
+    "backgroundUrl": "assets/template/experience/New-York-1.jpg"
+  }
 ]

@@ -19,10 +19,13 @@
     height: 780px;
     z-index: 1;
     position: relative;
-    transition: opacity 0.9s ease-in-out;
 }
 
+.illustration{
+  opacity: 0.5;
+  transition: opacity 3s ease-in-out;
+}
 
-.avatar-container:hover .illustration {
-    opacity: 1;
+.fade-in {
+  opacity: 1;
 }
