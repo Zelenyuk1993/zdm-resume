@@ -43,7 +43,7 @@
               "http": "https://www.instagram.com/logos_it_academy/"
             }
         ],
-        "backgroundUrl": "assets/template/experience/uberaba.jpg"
+        "backgroundUrl": "assets/template/experience/Lviv-1.jpg"
     },
     {
         "id": 2,
@@ -52,7 +52,7 @@
         "endAt": "11-01-2017",
         "companyName": "Dengo Systems",
         "website": "https://www.dengo-systems.com/en",
-        "logo": "assets/template/experience/logo/dengo-systems-logo.png",
+        "logo": "assets/template/experience/logo/dengo-systems-logo.svg",
         "internationalizations": [
             {
               "language": "ukr",
@@ -80,7 +80,7 @@
             }
 
         ],
-        "backgroundUrl": "assets/template/experience/rio.jpg"
+        "backgroundUrl": "assets/template/experience/Lviv-3.jpg"
     },
     {
         "id": 3,
@@ -116,7 +116,7 @@
                 "http": "https://www.linkedin.com/company/ogd-solutions/"
             }
         ],
-        "backgroundUrl": "assets/template/experience/sao-paulo.jpg"
+        "backgroundUrl": "assets/template/experience/Lviv-2.jpg"
     },
     {
         "id": 4,
@@ -162,7 +162,7 @@
                 "http": "https://www.facebook.com/applicature/"
             }
         ],
-        "backgroundUrl": "assets/template/experience/utrecht.jpg"
+        "backgroundUrl": "assets/template/experience/Kiev-2.jpg"
     },
     {
         "id": 5,
@@ -213,7 +213,7 @@
                 "http": "https://www.youtube.com/channel/UCRHMhVXEsPtTQ60dkxg8VXw"
             }
         ],
-        "backgroundUrl": "assets/template/experience/uberaba.jpg"
+        "backgroundUrl": "assets/template/experience/New-York-3.jpg"
     },
     {
         "id": 6,
@@ -259,6 +259,6 @@
                 "http": "https://www.youtube.com/channel/UCJUSBCP3RidGy31kV7Ey9Cg"
             }
         ],
-        "backgroundUrl": "assets/template/experience/rotterdam.jpg"
+        "backgroundUrl": "assets/template/experience/New-Jersey-1.jpg"
     }
 ]

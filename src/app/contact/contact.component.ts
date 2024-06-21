@@ -35,11 +35,11 @@ export class ContactComponent implements OnInit {
   contactForm: UntypedFormGroup = new UntypedFormGroup({
     name: new UntypedFormControl("",[
       Validators.required,
-      Validators.pattern("[A-zÀ-ú ]*")
+      Validators.pattern("[A-z]*")
     ]),
     email: new UntypedFormControl("",[
       Validators.required,
-      Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      Validators.pattern("^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
     ]),
     message: new UntypedFormControl("",[
       Validators.required
