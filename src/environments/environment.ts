@@ -14,14 +14,6 @@ export const environment = {
   },
   // replace the dummy data below with the real firebase configs
   firebaseConfig: {
-    // apiKey: "AIzaSyC2frVRAAltsVTmdwgFnATGHoVUzNHfzsM",
-    // authDomain: "live-resume-a575a.firebaseapp.com",
-    // databaseURL: "https://live-resume-a575a.firebaseio.com",
-    // projectId: "live-resume-a575a",
-    // storageBucket: "live-resume-a575a.appspot.com",
-    // messagingSenderId: "681076751855",
-    // appId: "1:681076751855:web:18bae3866ebfcc4fcd8a1a",
-    // measurementId: "G-00VXD77WNG",
     apiKey: "AIzaSyCxCXnQ3u5zDK3cBzCJOdQQ1YVv6fduM8s",
     databaseURL: "https://web-resume-816b8-default-rtdb.firebaseio.com",
     authDomain: "web-resume-816b8.firebaseapp.com",
