@@ -5,15 +5,15 @@
                 <h1 >Posts</h1>
             </div>
             <div class="navigation">
-                <a href="javascript:void(0)" class="previous" (click)="onClickPrevious()" [ngClass]="{'disabled': disablePreviousNavigation()}">
+                <a href="javascript:void(0)" class="previous" [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/swipe.mp3', vibrate: false }" (click)="onClickPrevious()" [ngClass]="{'disabled': disablePreviousNavigation()}">
                     <div class="molding">
                         <fa-icon [icon]="faChevronLeft" class="icon"  title="Previous"></fa-icon>
                         <span>Previous</span>
                     </div>
                 </a>
                 <div class="divider">|</div>
-                <a href="javascript:void(0)" class="next" (click)="onClickNext()" [ngClass]="{'disabled': disableNextNavigation()}">
-                    <div class="molding">
+                <a href="javascript:void(0)" class="next" [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/swipe.mp3', vibrate: false }" (click)="onClickNext()" [ngClass]="{'disabled': disableNextNavigation()}">
+                    <div  class="molding">
                         <span>Next</span>
                         <fa-icon [icon]="faChevronRight" class="icon" title="Next"></fa-icon>
                     </div>

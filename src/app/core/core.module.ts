@@ -8,12 +8,13 @@ import { LocalizedDatePipe } from "./pipe/localized-date.pipe";
 import { InternationalizationDirective } from "./directive/internationalization.directive";
 import { InViewportDirective } from "./directive/on-viewport.directive";
 import { EllipsisPipe } from "./pipe/ellipsis.pipe";
+import {PlaySoundAndVibrateDirective} from "./directive/appPlaySound.directive";
 
 @NgModule({
     imports: [ HttpClientModule ],
-    declarations: [ SafariDateFormatterPipe, LocalizedDatePipe, EllipsisPipe, InternationalizationDirective, InViewportDirective],
+    declarations: [ SafariDateFormatterPipe, LocalizedDatePipe, EllipsisPipe, InternationalizationDirective, InViewportDirective, PlaySoundAndVibrateDirective],
     providers: [ DataService, SorterService ],
-    exports: [ SafariDateFormatterPipe, LocalizedDatePipe, EllipsisPipe, InternationalizationDirective, InViewportDirective ]
+    exports: [ SafariDateFormatterPipe, LocalizedDatePipe, EllipsisPipe, InternationalizationDirective, InViewportDirective, PlaySoundAndVibrateDirective]
 })
 
 export class CoreModule { }

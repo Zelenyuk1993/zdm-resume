@@ -18,8 +18,8 @@
                 <div class="picture"></div>
                 <div class="info">
                     <p class="name" *ngIf="name"><span itemprop="name">{{ name }}</span></p>
-                    <p class="email" *ngIf="email"><fa-icon [icon]="faEnvelope" class="icon" title="Email"></fa-icon><a  href="mailto:{{ email }}" itemprop="email">{{ email }}</a></p>
-                    <p class="phone" *ngIf="phone"><fa-icon [icon]="faPhone" class="icon" title="Phone"></fa-icon><span itemprop="telephone">{{ phone }}</span></p>
+                    <p class="email" *ngIf="email"><fa-icon [icon]="faEnvelope" class="icon" title="Email"></fa-icon><a href="mailto:{{ email }}" itemprop="email">{{ email }}</a></p>
+                    <p class="phone" *ngIf="phone"><fa-icon [icon]="faPhone" class="icon" title="Phone"></fa-icon><a href="tel:{{ phone }}" itemprop="telephone">{{ phone }}</a></p>
                     <p class="location" *ngIf="location"><fa-icon [icon]="faMapMarkerAlt" class="icon" title="City"></fa-icon><span itemprop="city">{{ location }}</span></p>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                             <small *ngIf="senderMessage.errors?.required" class="text-danger">The message is required.</small>
                         </div>
                     </div>
-                    <input type="submit" value="Send">
+                    <input [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: true }" type="submit" value="Send">
                 </form>
             </div>
         </div>
