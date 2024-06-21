@@ -44,7 +44,7 @@
                                     <a href="{{ exp.website }}" target="_blank"><img src="{{ exp.logo }}" alt="{{ exp.companyName }}"></a>
                                 </div>
                                 <div class="info-block">
-                                    <div class="company-name"><a href="{{ exp.website }}" target="_blank">{{ exp.companyName }}</a></div>
+                                    <div class="company-name"><a [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: false }" href="{{ exp.website }}" target="_blank">{{ exp.companyName }}</a></div>
                                     <div class="role" appInternationalization [data]="exp.internationalizations" property='role'>Loading...</div>
                                     <div class="period">
                                         <span>{{ exp.startAt | safariDateFormatter | localizedDate:'MMM yyyy' }}</span>
