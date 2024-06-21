@@ -1,4 +1,4 @@
-import {AfterViewInit, Component} from "@angular/core";
+import {Component} from "@angular/core";
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -7,22 +7,10 @@ import { environment } from '../../environments/environment';
   styleUrls: ["./welcome.component.css", "./welcome-component.responsivity.css"],
 })
 
-export class WelcomeComponent implements AfterViewInit {
+export class WelcomeComponent {
 
-  public imageUrls: string[] = [
-    './assets/template/welcome/dmytro-illustration-deff.png',
-    './assets/template/welcome/dmytro-illustration-active.png',
-  ];
   constructor() {}
 
-
-  ngAfterViewInit(): void {
-    document.addEventListener('DOMContentLoaded', () => {
-      const image = document.getElementById('animatedImage') as HTMLImageElement;
-        image.classList.add('fade-in');
-        image.src = this.imageUrls[1];
-    });
-  }
   get characterName(): string {
     return environment.personal.name;
   }
