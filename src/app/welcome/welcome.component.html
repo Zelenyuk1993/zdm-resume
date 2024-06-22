@@ -1,6 +1,10 @@
 <section id="welcome">
     <div class="layer_one">
         <div class="avatar-container">
+          <a id="play-illustration" (click)="playIllustration()" class="video-play-button" href="javascript:void(0)">
+            <span></span>
+          </a>
+<!--          <a class="play-btn" href="javascript:void(0)"></a>-->
           <img loading="lazy" class="illustration image-transition" id="illustration" [src]="illustration" alt="{{characterName}}"/>
 
           <app-welcome-background></app-welcome-background>

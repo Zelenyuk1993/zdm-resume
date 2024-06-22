@@ -3,7 +3,7 @@
     #welcome {
         height: 585px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 585px;
     }
@@ -13,7 +13,7 @@
     #welcome {
         height: 465px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 465px;
     }
@@ -23,38 +23,51 @@
     #welcome {
         height: 385px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 385px;
     }
+
+  .video-play-button {
+    zoom: 0.7;
+  }
 }
 
 @media screen and (max-width: 600px) {
     #welcome {
         height: 290px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 290px;
-    } 
+    }
+  .video-play-button {
+    zoom: 0.7;
+  }
 }
 
 @media screen and (max-width: 500px) {
     #welcome {
         height: 250px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 250px;
-    } 
+    }
+  .video-play-button {
+    zoom: 0.7;
+  }
 }
 
 @media screen and (max-width: 320px) {
     #welcome {
         height: 220px;
     }
-    
+
     .layer_one .avatar-container .illustration {
         height: 220px;
-    } 
+    }
+  .video-play-button {
+    zoom: 0.5;
+  }
 }
