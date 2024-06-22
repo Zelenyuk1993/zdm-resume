@@ -19,6 +19,13 @@
     height: 780px;
     z-index: 1;
     position: relative;
-    opacity: 0.8;
 }
 
+.image-transition {
+  transition: opacity 1s ease-in-out;
+  opacity: 0.8;
+}
+
+.image-fade-out {
+  opacity: 0.4;
+}
