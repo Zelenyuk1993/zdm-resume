@@ -1,8 +1,12 @@
 <header itemscope itemtype="https://schema.org/WPHeader">
 
     <div class="child navbar-toggle">
-        <fa-icon [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: false }" [icon]="faBars"  class="bar-icon" (click)="onToggleBar()"></fa-icon>
+      <input type="checkbox" role="button" aria-label="Display the menu" class="menu" [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: false }" (click)="onToggleBar()">
     </div>
+
+<!--    <div class="child navbar-toggle">-->
+<!--        <fa-icon [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: false }" [icon]="faBars"  class="bar-icon" (click)="onToggleBar()"></fa-icon>-->
+<!--    </div>-->
 
     <div class="child logo-container" itemprop="brand" itemscope itemtype="https://schema.org/Brand">
         <a (click)="resetMenu()" href="#" class="logo" itemprop="name" itemprop="logo">zdm-official</a>
