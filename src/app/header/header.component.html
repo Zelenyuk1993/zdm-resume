@@ -23,18 +23,18 @@
         </ul>
     </div>
 
-<!--    <div class="child language-container">-->
-<!--        <div class="frame">-->
-<!--            <ul>-->
-<!--                <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">-->
-<!--                    <a href="/en/index.html" [ngClass]="{'active': locale === 'en'}" itemprop="name">EN</a>-->
-<!--                </li>-->
-<!--                <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">-->
-<!--                    <a href="/ukr/index.html" [ngClass]="{'active': locale === 'ukr'}" itemprop="name">UKR</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
+   <!-- <div class="child language-container">
+      <div class="frame">
+          <ul>
+               <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">
+                  <a href="/en/index.html" [ngClass]="{'active': locale === 'en'}" itemprop="name">EN</a>
+              </li>
+             <li itemprop="availableLanguage" itemscope itemtype="https://schema.org/Language">
+                  <a href="/ukr/index.html" [ngClass]="{'active': locale === 'ukr'}" itemprop="name">UKR</a>
+              </li>
+         </ul>
+       </div>
+   </div> -->
 
     <div class="child share-container" #shareBtn>
         <fa-icon [appPlaySoundAndVibrate]="{ sound: 'assets/sounds/click.mp3', vibrate: true }" [icon]="faShareAlt" class="icon" (click)="share()" alt="share" itemprop="share"></fa-icon>

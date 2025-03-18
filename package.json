@@ -7,9 +7,18 @@
     "start": "ng serve",
     "build": "ng build",
     "build-prod": "ng build --configuration production --aot",
+    "start:en": "ng serve --configuration en",
+    "start:ua": "ng serve --configuration ua",
+    "build:en": "ng build --configuration en",
+    "build:ua": "ng build --configuration ua",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "int:extract": "ng xi18n --output-path src/locales",
+    "build-locale:en": "ng build --configuration en",
+    "build-locale:ua": "ng build --configuration ua",
+    "build-locale": "npm run build-locale:en && npm run build-locale:ua"
+    
   },
   "private": true,
   "dependencies": {

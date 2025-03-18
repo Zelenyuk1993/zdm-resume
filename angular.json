@@ -9,6 +9,19 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ua": {
+            "translation": "src/locales/messages.ua.xlf",
+            "baseHref": ""
+          },
+          "en": {
+            "translation": "src/locales/messages.en.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -66,6 +79,24 @@
                 }
               ]
             },
+            "en": {
+              "aot": true,
+              "localize": [
+                "en"
+              ],
+              "outputPath": "dist/en/",
+              "baseHref": "/en/",
+              "i18nMissingTranslation": "error"
+            },
+            "ua": {
+              "aot": true,
+              "localize": [
+                "ua"
+              ],
+              "outputPath": "dist/ua/",
+              "baseHref": "/ua/",
+              "i18nMissingTranslation": "error"
+            },
             "es5": {
               "tsConfig": "./tsconfig.es5.json"
             }
@@ -79,6 +110,12 @@
           "configurations": {
             "production": {
               "browserTarget": "zdm-resume:build:production"
+            },
+            "en": {
+              "browserTarget": "zdm-resume:build:en"
+            },
+            "ua": {
+              "browserTarget": "zdm-resume:build:ua"
             },
             "es5": {
               "browserTarget": "zdm-resume:build:es5"
